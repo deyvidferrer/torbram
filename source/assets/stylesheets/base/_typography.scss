@@ -1,3 +1,5 @@
+
+
 html {
   color: $base-font-color;
   font-family: $base-font-family;
@@ -21,6 +23,8 @@ h6 {
 p {
   margin: 0 0 $small-spacing;
   margin: 0;
+  font-family: $heading-font-family;
+  font-size: modular-scale(1);
 }
 
 a {
