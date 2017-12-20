@@ -1,0 +1,73 @@
+// Based on http://codepen.io/skeurentjes/
+
+.banner {
+  color: white;
+  background: image-url('banner.png') top left/cover no-repeat;
+  height: 650px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  @include media($horizontal-bar-mode) {
+    height: 1000px;
+  }
+  @media(max-width: $mobile-screen - 1) {
+    height: 650px;
+      background: image-url('banner.png') top center/cover no-repeat;
+  }
+}
+
+.parallax-label {
+  //width: 50%;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  position: relative;
+  margin-left: 2em;
+  @media($horizontal-bar-mode) {
+    margin-left: 4em;
+  }
+  @media(max-width: $mobile-screen - 1) {
+    margin-left: 1em;
+  }
+  //margin: 0;
+  //text-shadow: 2px 2px 6px $black;
+  .main-text {
+    width: 100%;
+    color: $base-font-color;
+    font-size: 100px;
+    text-align: left;
+    @include media($horizontal-bar-mode) {
+      font-size: 150px;
+    }
+    @media(max-width: $mobile-screen - 1) {
+      font-size: 2em;
+    }
+  }
+  .white-label{
+    background-color: #ffffff;
+    padding: 1.5rem 2.5rem;
+    @include media($horizontal-bar-mode) {
+      padding: 3rem 5rem;
+    }
+    @media(max-width: $mobile-screen - 1) {
+      padding: 0.5rem 1rem;
+    }
+  }
+  .second-text {
+    width: 100%;
+    color: $base-font-color;
+    font-size: 18px;
+    text-align: left;
+    margin-top: 3.5rem;
+    line-height: 1.5rem;
+    @include media($horizontal-bar-mode) {
+      font-size: 25px;
+      margin-top: 6rem;
+    }
+    @media(max-width: $mobile-screen - 1) {
+      margin-top: 2rem;
+      font-size: 8px;
+    }
+  }
+}

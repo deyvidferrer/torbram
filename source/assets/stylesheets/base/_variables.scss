@@ -1,3 +1,9 @@
+// Break Point Large screen
+$large-screen: 1400px !default;
+$mobile-screen: 768px;
+$mobile: new-breakpoint(max-width 480px 4);
+$horizontal-bar-mode: $large-screen;
+
 // Typography
 $base-font-family: $font-stack-system;
 $heading-font-family: $base-font-family;
@@ -13,14 +19,19 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$blue: #1565c0;
 $dark-gray: #333;
 $medium-gray: #999;
-$light-gray: #ddd;
+$light-gray: #E9E9E9;
+
+$black: #393939;
+$green: #3DCFCC;
+$red: #FE7E57;
+
 
 // Font Colors
-$base-font-color: $dark-gray;
-$action-color: $blue;
+$base-font-color: $black;
+$action-color: $red;
+$secondary-color: $green;
 
 // Border
 $base-border-color: $light-gray;
@@ -39,3 +50,32 @@ $focus-outline-offset: 2px;
 // Animations
 $base-duration: 150ms;
 $base-timing: ease;
+
+// Colors - structures
+
+$themes: (
+  black: $black,
+  secondary: $green,
+  primary: $red
+) !default;
+
+@mixin theme($name, $color) {
+  $primary: $color;
+  //$secondary: lighten(adjust-hue($color, 20), 20%);
+  	.#{$name}-text {
+      color: $primary;
+    }
+
+    .#{$name}-bg {
+      background-color: $primary !important;
+    }
+
+    .#{$name}-borde {
+      border-color: $primary !important;
+    }
+}
+
+
+@each $theme, $color in $themes {
+  @include theme($theme, $color);
+}

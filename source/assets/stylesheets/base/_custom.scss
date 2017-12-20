@@ -1,0 +1,354 @@
+
+.deco-object {
+  position: relative;
+  img {
+    position: absolute;
+    right: 10%;
+    top: -300px;
+    @include media($horizontal-bar-mode) {
+      top: -350px;
+    }
+    @media(max-width: $mobile-screen - 1) {
+      top: -170px;
+      max-width: 196px;
+    }
+  }
+}
+
+.deco-object-2 {
+  position: relative;
+  img {
+    position: absolute;
+    left: 10%;
+    top: 130px;
+    @include media($horizontal-bar-mode) {
+      top: 150px;
+    }
+    @media(max-width: $mobile-screen - 1) {
+      display: none;
+    }
+  }
+}
+
+.deco-object-3 {
+  position: relative;
+  img {
+    position: absolute;
+    right: 0;
+    top: 800px;
+    @include media($horizontal-bar-mode) {
+      top: 780px;
+    }
+    @media(max-width: $mobile-screen - 1) {
+      display: none;
+    }
+  }
+}
+
+
+
+
+.protection-section {
+  position: relative;
+  top: 0;
+
+  h2 {
+    position: relative;
+    font-size: 70px;
+    text-align: right;
+    margin-top: 2em;
+    margin-right: 12%;
+    line-height: 94px;
+    @include media($horizontal-bar-mode) {
+      font-size: 100px;
+      line-height: 124px;
+    }
+    @media(max-width: $mobile-screen - 1) {
+      font-size: 40px;
+      line-height: 64px;
+      text-align: left;
+      margin-top: 2em;
+      margin-left: 0.5em;
+    }
+  }
+
+  .legend {
+    width: 100%;
+    margin-top: 7em;
+    @media(max-width: $mobile-screen - 1) {
+     margin-top: 0em;
+    }
+
+    .text {
+      width: 30%;
+      margin-left: 30%;
+      vertical-align: top;
+      margin-right: 3%;
+      display: inline-block;
+      @media(max-width: $mobile-screen - 1) {
+       width: 100%;
+       margin-left: 0em;
+       margin-top: 0em;
+       margin-right: 0%;
+      }
+    }
+
+    .img-sec {
+      width: 36.50%;
+      vertical-align: top;
+      position: relative;
+      right: 0;
+      display: inline-block;
+      margin-top: 8em;
+      @media(max-width: $mobile-screen - 1) {
+         width: 100%;
+         margin-top: 2em;
+      }
+    }
+
+    h2 {
+      font-size: 55px;
+      text-align: left;
+
+      @include media($horizontal-bar-mode) {
+        font-size: 75px;
+      }
+      @media(max-width: $mobile-screen - 1) {
+       font-size: 45px;
+       margin-top: 0em;
+      }
+    }
+
+    div.p-text {
+      width: 100%;
+      padding: 1rem;
+
+      p {
+        font-size: 18px;
+
+        @include media($horizontal-bar-mode) {
+          font-size: 25px;
+        }
+        @media(max-width: $mobile-screen - 1) {
+         font-size: 18px;
+        }
+      }
+    }
+
+  }
+
+  .row {
+    @include row();
+  }
+}
+
+.our-services {
+  @include row();
+  width: 100%;
+  padding: 6em;
+  text-align: left;
+  @media(max-width: $mobile-screen - 1) {
+   padding: 1em;
+   text-align: center;
+  }
+
+  h2 {
+    font-size: 45px;
+    @include media($horizontal-bar-mode) {
+      font-size: 75px;
+    }
+    @media(max-width: $mobile-screen - 1) {
+     font-size: 40px;
+    }
+  }
+
+  .row-container {
+    position: relative;
+    top: -130px;
+    width: 100%;
+    @media(max-width: $mobile-screen - 1) {
+     top: 0px;
+    }
+    .text {
+      width: 30%;
+      display: inline-block;
+      vertical-align: bottom;
+      text-align: left;
+      @media(max-width: $mobile-screen - 1) {
+       width: 100%;
+      }
+
+      h1 {
+        font-size: 90px;
+        line-height: 120px;
+        @include media($horizontal-bar-mode) {
+          font-size: 150px;
+          line-height: 200px;
+        }
+      }
+      h3{
+        font-size: 40px;
+        line-height: 53px;
+        @include media($horizontal-bar-mode) {
+          font-size: 50px;
+          line-height: 67px;
+        }
+      }
+      p {
+        font-size: 18px;
+        line-height: 24px;
+        @include media($horizontal-bar-mode) {
+          font-size: 25px;
+          line-height: 33px;
+        }
+      }
+    }
+  }
+
+
+  .main-container, .main-container2, .main-container3 {
+    position: relative;
+    width: 100%;
+
+    .img-sec {
+      width: 30%;
+      margin-left: 30%;
+      margin-right: 3%;
+      display: inline-block;
+      vertical-align: bottom;
+      @media(max-width: $mobile-screen - 1) {
+       width: 100%;
+       margin-left: 0em;
+      }
+    }
+    .text {
+      width: 30%;
+      display: inline-block;
+      vertical-align: bottom;
+      text-align: right;
+      @media(max-width: $mobile-screen - 1) {
+       width: 100%;
+      }
+
+      h1 {
+        font-size: 90px;
+        line-height: 120px;
+        @include media($horizontal-bar-mode) {
+          font-size: 150px;
+          line-height: 200px;
+        }
+      }
+      h3{
+        font-size: 40px;
+        line-height: 53px;
+        @include media($horizontal-bar-mode) {
+          font-size: 50px;
+          line-height: 67px;
+        }
+      }
+      p {
+        font-size: 18px;
+        line-height: 24px;
+        @include media($horizontal-bar-mode) {
+          font-size: 25px;
+          line-height: 33px;
+        }
+      }
+    }
+  }
+
+  .main-container2 {
+
+    .img-sec {
+      margin-left: 20%;
+      @media(max-width: $mobile-screen - 1) {
+       width: 100%;
+       margin-left: 0em;
+       margin-top: 2em;
+      }
+    }
+
+    .text {
+      text-align: left;
+    }
+  }
+
+  .main-container3 {
+
+    .img-sec {
+      margin-left: 0;
+      width: 17%;
+      @media(max-width: $mobile-screen - 1) {
+       display: none;
+      }
+    }
+
+    .text {
+      text-align: right;
+    }
+  }
+}
+
+.explanation{
+  width: 100%;
+  padding: 10em 2em;
+  background-color: $light-gray;
+  @media(max-width: $mobile-screen - 1) {
+   padding: 4em 0.5em;
+  }
+
+  .title {
+    margin-right: 3%;
+    font-size: 55px;
+    line-height: 100px;
+    text-align: right;
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    @media(max-width: $mobile-screen - 1) {
+     width: 100%;
+     text-align: left;
+     margin-right: 0;
+    }
+    @include media($horizontal-bar-mode) {
+      font-size: 75px;
+      line-height: 140px;
+    }
+    @media(max-width: $mobile-screen - 1) {
+     font-size: 40px;
+     line-height: 80px;
+    }
+  }
+
+  .content {
+    width: 60%;
+    font-size: 25px;
+    line-height: 33px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+
+    @media(max-width: $mobile-screen - 1) {
+     width: 100%;
+     margin-top: 2em;
+    }
+
+    @include media($horizontal-bar-mode) {
+      font-size: 18px;
+      line-height: 23px;
+    }
+    @media(max-width: $mobile-screen - 1) {
+     font-size: 18px;
+     line-height: 23px;
+    }
+  }
+}
+
+.maps-section {
+  width: 100%;
+  display: block;
+  #map {
+    height: 500px;
+    width: 100%;
+   }
+}
