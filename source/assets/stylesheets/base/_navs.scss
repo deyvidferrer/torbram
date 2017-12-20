@@ -20,10 +20,11 @@ header.navigation {
   $horizontal-bar-mode: $large-screen;
 
   background-color: $navigation-background;
-  border-bottom: 1px solid darken($navigation-background, 10);
+  border-bottom: 0px solid darken($navigation-background, 10);
   min-height: $navigation-height;
   width: 100%;
   z-index: 999;
+  position: fixed;
 
   .navigation-wrapper {
     @include clearfix;
