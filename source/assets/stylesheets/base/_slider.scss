@@ -44,7 +44,7 @@
     @include media($horizontal-bar-mode) {
       font-size: 140px;
       line-height: 200px;
-      font-weight: 300;
+      font-weight: 500;
     }
     @media(max-width: $mobile-screen - 1) {
       font-size: 2em;
@@ -78,6 +78,7 @@
     text-align: left;
     margin-top: 4rem;
     line-height: 1.5rem;
+    font-weight: 500;
     @include media($horizontal-bar-mode) {
       font-size: 42px;
       margin-top: 6rem;

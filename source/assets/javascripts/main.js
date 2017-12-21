@@ -1,4 +1,6 @@
 //= require jquery
+//= require scrollreveal
+//= require animation
 
 // menu
 $(window).resize(function() {
