@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+//@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
 
 // Break Point Large screen
 $large-screen: 1400px !default;
@@ -9,8 +9,8 @@ $horizontal-bar-mode: $large-screen;
 // Typography
 //$base-font-family: $font-stack-system;
 //$heading-font-family: $base-font-family;
-$base-font-family: 'Roboto', sans-serif;;
-$heading-font-family: 'Roboto', sans-serif;;
+$base-font-family: 'Segoe UI';
+$heading-font-family: 'Segoe UI';
 
 // Line height
 $base-line-height: 1.5;

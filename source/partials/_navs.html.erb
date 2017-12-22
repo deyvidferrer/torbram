@@ -6,21 +6,21 @@
     <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
     <nav role="navigation">
       <ul id="js-navigation-menu" class="navigation-menu show">
-        <li class="nav-link"><a href="/torbram/build/index.html#home">Home</a></li>
-        <li class="nav-link"><a href="/torbram/build/index.html#about">About Us</a></li>
+        <li class="nav-link"><%= link_to 'Home',"/index.html#home" %></li>
+        <li class="nav-link"><%= link_to 'About Us', "/index.html#about"%></li>
 
         <li id="js-navigation-more" class="nav-link more"><a href="javascript:void(0)">Services</a>
           <ul class="submenu">
             <% sitemap.resources.each do |f| %>
               <% if f.path.include? "html" %>
                 <% if f.path.include? "services" %>
-                  <li><a href="/torbram/build/<%= f.path %>"><%= f.data.title %></a></li>
+                  <li><%= link_to  f.data.title , "/#{f.path}" %></li>
                 <% end %>
               <% end %>
             <% end %>
           </ul>
         </li>
-        <li class="nav-link"><a href="/torbram/build/index.html#contact">Contact</a></li>
+        <li class="nav-link"><%= link_to 'Contact', "/index.html#contact"%></li>
       </ul>
     </nav>
   </div>

@@ -8,7 +8,7 @@ set :images_dir, "assets/images"
 set :js_dir, "assets/javascripts"
 
 # Global site settings (not shown here)
-# set :site_url, ""
+ set :site_url, ""
 
 set :markdown,
   autolink: true,
@@ -49,8 +49,9 @@ configure :production do
 end
 
 configure :build do
-  #set :site_url, "https://deyvidferrer.github.io/torbram/build/"
-  #set :http_prefix, 'https://deyvidferrer.github.io/torbram/build/'
+  set :site_url, "/torbram/build/"
+  #set :http_prefix, '/torbram/build/'
+  set :base_url, "/torbram/build/"
   activate :relative_assets
   set :relative_links, true
   #activate :minify_css
