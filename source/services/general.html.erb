@@ -1,0 +1,43 @@
+---
+title: "General Services"
+image: "generalservices"
+cards:
+    -
+      title: " Kill the fire before occurring"
+      description: "This is where our skilled experts would train you about fire safety, prevention methods and using the fire extinguisher. We focus on installation, inspection and test the systems."
+      imagen: "card1.jpg"
+    -
+      title: "Suppress the fire"
+      description: "In the rare case, if a fire were to break out our alarm system would warn you to evacuate the space to safety in early stages of fire, Trigger the fire suppression system to contain various types of fires, and alert our monitoring center which operates 24/7/365. Fire and safety don’t take a vacation."
+      imagen: "card2.jpg"
+
+    -
+      title: "After fire suppression"
+      description: "After our system engages in fire suppression we will assist you in resetting suppression systems from inspecting and testing the system to ensure it is functional and protecting you."
+      imagen: "card3.jpg"
+
+
+---
+
+<%= partial(:'partials/parallax', :locals => { :title => current_page.data.title, :imagebackground => current_page.data.image }) %>
+
+<div class="container">
+  <%= partial(:'partials/cards', :locals => { :list => current_page.data.cards }) %>
+</div>
+
+  <section class="explanation" id="explanation">
+    <div class="title">
+        <h3 class="uppercase"><%= current_page.data.title %></h3>
+    </div>
+
+    <div class="content">
+      <h3 class="primary-text">Our primary area of focus is to ensure fire does not occur in the first place.</h3>
+      <ul>
+        <li>Free in person inspection and custom quotation  </li>
+        <li>Fire safety planning, evaluation and custom solution.</li> 
+        <li>Installation and user training on fire suppression systems.</li> 
+        <li>Testing, certification and maintenance of fire suppression systems.</li>
+      </ul>
+
+    </div>
+  </section>

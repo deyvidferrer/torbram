@@ -19,4 +19,5 @@ $(document).ready(function() {
   sr.reveal('.title ', { duration: 500 });
   sr.reveal('.content ', { duration: 600 });
   sr.reveal('.maps-section ', { duration: 700 });
+  sr.reveal('.cards ', { duration: 700 });
 });

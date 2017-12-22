@@ -1,0 +1,1 @@
+function parallax(){if($("#js-parallax-window").length>0){var a=$("#js-parallax-background"),l=$("#js-parallax-window"),n=$(l).offset().top,o=$(window).scrollTop(),r=n-o;$(a).offset().top,window.innerHeight;a.css("top",-r*.35+"px")}}$(document).ready(function(){$("#js-parallax-window").length&&parallax()}),$(window).scroll(function(){$("#js-parallax-window").length&&parallax()});

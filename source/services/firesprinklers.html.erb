@@ -1,0 +1,56 @@
+---
+title: "Fire Sprinklers"
+image: "firesprinkler"
+---
+
+<%= partial(:'partials/parallax', :locals => { :title => current_page.data.title, :imagebackground => current_page.data.image }) %>
+
+  <section class="explanation white-bg" id="explanation">
+    <div class="title">
+        <h3 class="uppercase"><%= current_page.data.title %></h3>
+    </div>
+
+    <div class="content">
+      <h3 class="primary-text">Wet Pipe: </h3>
+      <ul>
+        <li>Water is always present in the pipes that supply the sprinkler system and sprinkler heads.</li>
+        <li>When triggered the air is released followed by water to suppress the fire.</li>
+        <li>Used in areas where the temperature drops to freezing and crack the pipes.</li>
+        <li>Ideal for underground garages, walk-in fridge/ freezers.</li>
+        <li>The most common system in industrial and commercial systems.</li>
+        <li>Used indoor where the risk of water freezing is non-existence.</li>
+      </ul>
+
+      <hr>
+      <h3 class="primary-text">Dry pipe: </h3>
+      <ul>    
+        <li>Water is held back by a control valve.</li>
+        <li>When triggered the air is released followed by water to suppress the fire. </li>
+        <li>Used in areas where the temperature drops to freezing and crack the pipes.</li>
+        <li>Ideal for underground garages, walk-in fridge/ freezers.</li>
+        <li>Air is always present in the pipes that supply the sprinkler system and sprinkler heads.</li>
+      </ul>
+
+      <hr>
+      <h3 class="primary-text">Pre-Action:</h3>
+      <ul>
+        <li>Similar to a hybrid of the dry and wet system.</li>
+        <li>Water is held back by a control valve.</li>
+        <li>In order to fill the pipes with water, a smoke alarm, or heat alarm should be triggered. Hence the term pre-action.</li>
+        <li>If the piping system has a leak, the filling of water can be stopped, also ensure undesired water leak from pipes does not occur.</li>
+        <li>Used in Locations where accidental activation is undesired.</li>
+        <li>Ideal for Library, museums, Data Centers, Computer labs etc.</li>
+      </ul>
+
+      <hr>
+      <h3 class="primary-text">Deluge and recycling:</h3>
+      <ul>
+        <li>An open system where the pipes are empty and unpressurized.</li>
+        <li>There is no valve element at sprinkler heads.</li>
+        <li>The trigger to activate the system can be manual or from other sensors.</li>
+        <li>Usually controlled by fire alarm panel.</li>
+        <li>Covers larger area.</li>
+      </ul> 
+
+    </div>
+  </section>

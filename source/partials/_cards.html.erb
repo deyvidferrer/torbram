@@ -1,0 +1,15 @@
+<div class="cards">
+  <% list.each do |f| %>
+    <div class="card">
+      <div class="card-image">
+        <%= image_tag (f.imagen) %>
+      </div>
+      <div class="card-header primary-text">
+        <%= f.title %>
+      </div>
+      <div class="card-copy">
+        <p><%= f.description%></p>
+      </div>
+    </div>
+  <% end %>
+</div>

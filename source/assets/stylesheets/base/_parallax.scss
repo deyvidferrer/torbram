@@ -1,0 +1,65 @@
+$parallax-window-height: 30em;
+$parallax-background-height: $parallax-window-height * 2;
+
+.parallax-window {
+  max-height: $parallax-window-height;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.parallax-static-content {
+  color: $white;
+  padding: 8em 0;
+  position: relative;
+  z-index: 9;
+
+  h1 {
+    color: $white;
+      width: 100%;
+      font-size: 100px;
+      line-height: 130px;
+      font-weight: 500;
+      text-align: center;
+      @include media($horizontal-bar-mode) {
+        font-size: 140px;
+        line-height: 200px;
+        font-weight: 500;
+      }
+      @media(max-width: $mobile-screen - 1) {
+        font-size: 2em;
+        line-height: 2em;
+      }
+  }
+}
+
+.parallax-background {
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png") repeat;
+  background-position: top;
+  background-size: cover;
+  background-color: beige;
+  height: $parallax-background-height;
+  left: 0;
+  position: absolute;
+  top: - $parallax-window-height / 3;
+  width: 100%;
+}
+
+.firesprinkler {
+  background: image-url("firesprinklers.jpg") repeat !important;
+}
+
+.firealarms {
+  background: image-url("firealarms.jpg") repeat !important;
+}
+
+.firestinguishers {
+  background: image-url("firestinguishers.jpg") repeat !important;
+}
+
+.generalservices {
+  background: image-url("generalservices.jpg") repeat !important;
+}
+
+// Based on http://codepen.io/skeurentjes/

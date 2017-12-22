@@ -1,4 +1,11 @@
+.container {
+  width: 100%;
+  padding: 3em 2em;
+}
 
+.uppercase {
+  text-transform: uppercase;
+}
 .social-icon {
   position: fixed;
   right: 20px;
@@ -224,6 +231,11 @@
   @media(max-width: $mobile-screen - 1) {
    padding: 1em;
    text-align: center;
+  }
+
+  a {
+    text-decoration: none !important;
+    color: $black;
   }
 
   h2 {

@@ -1,0 +1,23 @@
+---
+title: "Fire Alarm"
+image: "firealarms"
+---
+
+<%= partial(:'partials/parallax', :locals => { :title => current_page.data.title, :imagebackground => current_page.data.image }) %>
+
+  <section class="explanation white-bg" id="explanation">
+    <div class="title">
+        <h3 class="uppercase"><%= current_page.data.title %></h3>
+    </div>
+
+    <div class="content">
+      <h3 class="primary-text">Alarm: </h3>
+      <ul>
+        <li>Monitored Fire alarm systems.</li>
+        <li>Visual smoke detection systems.</li> 
+        <li>Fully addressable fire alarm systems.</li> 
+        <li>Monitored 24/7/365 days.  Fire and safety don’t take vacation.</li>
+      </ul>
+
+    </div>
+  </section>

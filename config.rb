@@ -24,6 +24,16 @@ page "/*.json", layout: false
 page "/*.txt", layout: false
 page "/*.xml", layout: false
 
+page "/services/*", :layout => :service_layout
+
+# Server Environment
+configure :server do
+
+  # Debug assets
+  set :debug_assets, true
+
+end
+
 configure :development do
   activate :livereload do |reload|
     reload.no_swf = true
