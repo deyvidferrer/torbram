@@ -48,6 +48,7 @@ configure :production do
 end
 
 configure :build do
+  set :site_url, "https://deyvidferrer.github.io/torbram/build/"
   activate :relative_assets
   set :relative_links, true
   #activate :minify_css
