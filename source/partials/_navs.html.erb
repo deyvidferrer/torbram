@@ -6,21 +6,21 @@
     <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
     <nav role="navigation">
       <ul id="js-navigation-menu" class="navigation-menu show">
-        <li class="nav-link"><a href="#{site_url}/index.html#home">Home</a></li>
-        <li class="nav-link"><a href="#{site_url}/index.html#about">About Us</a></li>
+        <li class="nav-link"><a href="<%=site_url%>/index.html#home">Home</a></li>
+        <li class="nav-link"><a href="<%=site_url%>/index.html#about">About Us</a></li>
 
         <li id="js-navigation-more" class="nav-link more"><a href="javascript:void(0)">Services</a>
           <ul class="submenu">
             <% sitemap.resources.each do |f| %>
               <% if f.path.include? "html" %>
                 <% if f.path.include? "services" %>
-                  <li><a href="#{site_url}/<%= f.path %>"><%= f.data.title %></a></li>
+                  <li><a href="<%=site_url%>/<%= f.path %>"><%= f.data.title %></a></li>
                 <% end %>
               <% end %>
             <% end %>
           </ul>
         </li>
-        <li class="nav-link"><a href="#{site_url}/index.html#contact">Contact</a></li>
+        <li class="nav-link"><a href="<%=site_url%>/index.html#contact">Contact</a></li>
       </ul>
     </nav>
   </div>
