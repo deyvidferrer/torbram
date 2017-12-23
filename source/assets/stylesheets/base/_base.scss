@@ -4,7 +4,7 @@
 // MIT License
 @import "fontface";
 @import "variables";
-
+@import "mixin";
 @import "buttons";
 @import "forms";
 @import "layout";
@@ -12,9 +12,15 @@
 @import "media";
 @import "tables";
 @import "typography";
-// @import "footer";
+//@import "footer";
 @import "navs";
 @import "slider";
 @import "parallax";
 @import "cards";
+@import "socialicon";
+@import "decorative";
+@import "protection-section";
+@import "ourservices";
+@import "boxes";
+@import "explanation";  //include the footer style
 @import "custom";

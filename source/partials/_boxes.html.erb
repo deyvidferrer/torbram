@@ -1,0 +1,27 @@
+<div class="box-object-3">
+  <%= image_tag('deco-object-3.png')%>
+</div>
+
+<section class="boxes">
+  <h2>GENERAL<span class="primary-text"> SERVICES</span></h2>
+
+<% i = 0 %>
+<% list.each do |f|%>
+      <div class="main-container<%=i%>">
+        <% unless i == 1 %>
+          <div class="img-sec">
+            <%= image_tag(f.imagen, :class => 'img', :style => "margin-left: 30%")%>
+          </div>
+        <% end %>
+        <div class="text" >
+            <h1><%= i + 1 %></h1>
+            <h3><%= f.title %></h3>
+          <p><%= f.description %></p>
+        </div>
+      </div>
+
+
+    <% i+=1 %>
+<% end %>
+
+</section>

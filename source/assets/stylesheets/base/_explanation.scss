@@ -1,0 +1,121 @@
+.explanation, .footer{
+  width: 100%;
+  padding: 5em 2em 7em;
+  background-color: $light-gray;
+  @include media($horizontal-bar-mode) {
+    padding: 7em 2em 9em;
+  }
+  @media(max-width: $mobile-screen - 1) {
+   padding: 4em 0.5em;
+  }
+
+  .title {
+    margin-right: 3%;
+    text-align: right;
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    @media(max-width: $mobile-screen - 1) {
+     width: 100%;
+     text-align: left;
+     margin-right: 0;
+    }
+
+    h3 {
+      font-size: 55px;
+      line-height: 73x;
+      font-weight: 100;
+      @media(max-width: $mobile-screen - 1) {
+       font-size: 40px;
+       line-height: 63px;
+      }
+      @include media($horizontal-bar-mode) {
+        font-size: 75px;
+        line-height: 93px;
+      }
+    }
+  }
+
+  .content {
+    width: 60%;
+    font-size: 25px;
+    line-height: 33px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+
+    @media(max-width: $mobile-screen - 1) {
+     width: 100%;
+     margin-top: 2em;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 23px;
+      @media(max-width: $mobile-screen - 1) {
+       font-size: 18px;
+       line-height: 23px;
+      }
+
+      @include media($horizontal-bar-mode) {
+        font-size: 25px;
+        line-height: 33px;
+      }
+    }
+
+    ul {
+      list-style-type: disc;
+      margin: 1em 3em;
+      padding: 0em;
+      @media(max-width: $mobile-screen - 1) {
+        margin: 1em 1.5em;
+      }
+      li {
+        font-size: 18px;
+        line-height: 23px;
+        @media(max-width: $mobile-screen - 1) {
+          font-size: 18px;
+          line-height: 23px;
+        }
+
+        @include media($horizontal-bar-mode) {
+          font-size: 18px;
+          line-height: 23px;
+        }
+      }
+    }
+
+  }
+}
+
+// Custom Footer by deyvid
+.footer {
+  background-color: #3a3a3a;
+  padding: 5em 2em 4em;
+
+  img {
+    max-width: 184px;
+    margin-left: 4%;
+    @media(max-width: $mobile-screen - 1) {
+     margin: auto;
+    }
+  }
+  pre {
+    font-size: 18px;
+    line-height: 23px;
+    @media(max-width: $mobile-screen - 1) {
+     font-size: 18px;
+     line-height: 23px;
+    }
+
+    @include media($horizontal-bar-mode) {
+      font-size: 25px;
+      line-height: 33px;
+    }
+
+    a {
+      text-decoration: none;
+      color: $white;
+    }
+  }
+}

@@ -3,16 +3,16 @@
 .banner {
   color: white;
   background: image-url('banner.png') top left/cover no-repeat;
-  height: 680px;
+  height: getvw(680px);
   display: flex;
   justify-content: left;
   align-items: center;
 
   @include media($horizontal-bar-mode) {
-    height: 1000px;
+    height: getvw(1000px);
   }
   @media(max-width: $mobile-screen - 1) {
-    height: 650px;
+    height: getvh(650px);
       background: image-url('banner.jpg') top center/cover no-repeat;
   }
 }
@@ -21,71 +21,72 @@
   //width: 50%;
   font-weight: normal;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: getvw(4px);
   position: relative;
-  margin-left: 3em;
-  margin-top: 7.5em;
+  margin-left: getvw(70px);
+  margin-top: getvw(229px);
   @media($horizontal-bar-mode) {
-    margin-left: 5em;
-    margin-top: 10.5em;
+    margin-left: getvw(70px);
+    margin-top: getvw(229px);
   }
   @media(max-width: $mobile-screen - 1) {
-    margin-left: 1em;
+    margin-left: getvw(70px);
+    margin-top: getvw(229px);
   }
   //margin: 0;
   //text-shadow: 2px 2px 6px $black;
   .main-text {
     width: 100%;
     color: $base-font-color;
-    font-size: 100px;
-    line-height: 130px;
+    font-size: getvw(100px);
+    line-height: getvw(130px);
     font-weight: 500;
     text-align: left;
     @include media($horizontal-bar-mode) {
-      font-size: 140px;
-      line-height: 200px;
+      font-size: getvw(140px);
+      line-height: getvw(200px);
       font-weight: 500;
     }
     @media(max-width: $mobile-screen - 1) {
-      font-size: 2em;
-      line-height: 2em;
+      font-size: getvw(150px);
+      line-height: getvw(180px);
     }
   }
   .white-label, .white-label-mini{
     background-color: #ffffff;
-    padding: 1.5rem 4.5rem 1.5rem 2.5rem;
+    padding: getvw(10px) getvw(50px) getvw(10px) getvw(30px);
     @include media($horizontal-bar-mode) {
-      padding: 1.5rem 4.5rem 1.5rem 2.5rem;
+      padding: getvw(10px) getvw(50px) getvw(10px) getvw(30px);
     }
     @media(max-width: $mobile-screen - 1) {
-      padding: 0.5rem 1rem;
+      padding: getvw(10px) getvw(50px) getvw(10px) getvw(30px);
     }
   }
 
   .white-label-mini {
-    padding: 0.5rem 1.5rem;
+    padding: getvw(10px) getvw(50px) getvw(10px) getvw(30px);
     @include media($horizontal-bar-mode) {
-      padding: 1.5rem 2.5rem;
+      padding: getvw(10px) getvw(50px) getvw(10px) getvw(30px);
     }
     @media(max-width: $mobile-screen - 1) {
-      padding: 0.5rem 1rem;
+      padding: getvw(10px) getvw(50px) getvw(10px) getvw(30px);
     }
   }
   .second-text {
     width: 100%;
     color: $base-font-color;
-    font-size: 32px;
+    font-size: getvw(32px);
     text-align: left;
-    margin-top: 4rem;
-    line-height: 1.5rem;
+    margin-top: getvw(50px);
+    line-height: getvw(42px);
     font-weight: 500;
     @include media($horizontal-bar-mode) {
-      font-size: 42px;
-      margin-top: 6rem;
+      font-size: getvw(42px);
+      margin-top: getvw(50px);
     }
     @media(max-width: $mobile-screen - 1) {
-      margin-top: 2rem;
-      font-size: 8px;
+      margin-top: getvw(50px);
+      font-size: getvw(42px);
     }
   }
 }

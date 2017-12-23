@@ -1,0 +1,108 @@
+.protection-section {
+  position: relative;
+  top: 0;
+
+  h2 {
+    position: relative;
+    font-size: getvw(70px);
+    text-align: right;
+    margin-top: getvw(123px);
+    font-weight: 100;
+    margin-right: getvw(123px);
+    line-height: getvw(94px);
+    @include media($horizontal-bar-mode) {
+      font-size: getvw(100px);
+      line-height: get(124px);
+    }
+    @media(max-width: $mobile-screen - 1) {
+      font-size: getvw(70px);
+      line-height: getvw(94px);
+      text-align: left;
+      margin-top: getvw(100px);
+      margin-left: getvw(20px);
+    }
+  }
+
+  .legend {
+    width: 100%;
+    margin-top: getvw(50px);
+    @media(max-width: $mobile-screen - 1) {
+     margin-top: 0;
+    }
+
+    .text {
+      width: 30%;
+      margin-left: getvw(306px);
+      vertical-align: top;
+      margin-right: 3.60%;
+      display: inline-block;
+      @media(max-width: $mobile-screen - 1) {
+       width: 100%;
+       margin-left: 0em;
+       margin-top: 0em;
+       margin-right: 0%;
+      }
+
+          h2 {
+            font-size: getvw(55px);
+            line-height: getvw(73px);
+            text-align: left;
+            margin-top: getvw(120px);
+
+            @include media($horizontal-bar-mode) {
+              font-size: getvw(75px);
+              line-height: getvw(93px);
+            }
+            @media(max-width: $mobile-screen - 1) {
+             font-size: getvw(45px);
+             margin-top: 0em;
+            }
+          }
+    }
+
+    .img-sec {
+      width: 41.50%;
+      vertical-align: top;
+      position: relative;
+      right: 0;
+      display: inline-block;
+      margin-top: getvw(150px);
+      @include media($horizontal-bar-mode) {
+        margin-top: getvw(150px);
+      }
+      @media(max-width: $mobile-screen - 1) {
+         width: 100%;
+         margin-top: getvw(100px);
+      }
+    }
+
+
+    div.p-text {
+      width: 80%;
+      padding: getvw(15px) 0;
+      @include media($horizontal-bar-mode) {
+        width: 80%;
+      }
+      @media(max-width: $mobile-screen - 1) {
+       width: 90%;
+       padding: getvw(15px);
+      }
+
+      p {
+        font-size: getvw(18px);
+
+        @include media($horizontal-bar-mode) {
+          font-size: getvw(18px);
+        }
+        @media(max-width: $mobile-screen - 1) {
+         font-size: getvw(18px);
+        }
+      }
+    }
+
+  }
+
+  .row {
+    @include row();
+  }
+}

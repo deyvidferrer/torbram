@@ -1,0 +1,81 @@
+.deco-object {
+  position: relative;
+  img {
+    position: absolute;
+    right: getvw(113px);
+    top: getvw(-100px);
+    width: getvw(196px);
+    @include media($horizontal-bar-mode) {
+      top: getvw(-150px);
+    }
+    @media(max-width: $mobile-screen - 1) {
+      top: getvw(-66px);
+      width: get(150px);
+    }
+  }
+}
+
+.deco-object-2 {
+  position: relative;
+  img {
+    position: absolute;
+    left: getvw(113px);
+    top: getvw(90px);
+    width: getvw(192px);
+    @include media($horizontal-bar-mode) {
+      top: getvw(110px);
+    }
+    @media(max-width: $mobile-screen - 1) {
+      display: none;
+    }
+  }
+}
+
+.deco-object-3 {
+  position: relative;
+  img {
+    position: absolute;
+    right: 0;
+    top: getvw(450px);
+    width: getvw(267px);
+    @include media($horizontal-bar-mode) {
+      top: getvw(650px);
+    }
+    @media(max-width: $mobile-screen - 1) {
+      display: none;
+    }
+  }
+}
+
+.deco-object-4 {
+  position: relative;
+  img {
+    position: absolute;
+    left: 0;
+    width: getvw(267px);
+    bottom: getvw(-15px);
+    @include media($horizontal-bar-mode) {
+      bottom: getvw(-15px);
+    }
+    @media(max-width: $mobile-screen - 1) {
+      display: none;
+    }
+  }
+}
+
+
+.deco-object-5 {
+  position: relative;
+  img {
+    position: absolute;
+    right: getvw(217px);
+    top: getvw(-80px);
+    width: getvw(180px);
+    @include media($horizontal-bar-mode) {
+      top: getvw(-260px);
+    }
+    @media(max-width: $mobile-screen - 1) {
+      display: none;
+    }
+  }
+}

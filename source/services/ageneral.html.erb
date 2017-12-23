@@ -5,24 +5,25 @@ cards:
     -
       title: " Kill the fire before occurring"
       description: "This is where our skilled experts would train you about fire safety, prevention methods and using the fire extinguisher. We focus on installation, inspection and test the systems."
-      imagen: "card1.jpg"
+      imagen: "fire_sprinkler.jpg"
     -
       title: "Suppress the fire"
       description: "In the rare case, if a fire were to break out our alarm system would warn you to evacuate the space to safety in early stages of fire, Trigger the fire suppression system to contain various types of fires, and alert our monitoring center which operates 24/7/365. Fire and safety don’t take a vacation."
-      imagen: "card2.jpg"
+      imagen: "firestinguishers.jpg"
 
     -
       title: "After fire suppression"
       description: "After our system engages in fire suppression we will assist you in resetting suppression systems from inspecting and testing the system to ensure it is functional and protecting you."
-      imagen: "card3.jpg"
+      imagen: "pullstation.jpg"
 
 
 ---
 
 <%= partial(:'partials/parallax', :locals => { :title => current_page.data.title, :imagebackground => current_page.data.image }) %>
+<%= partial "partials/sect-protection" %>
 
 <div class="container">
-  <%= partial(:'partials/cards', :locals => { :list => current_page.data.cards }) %>
+  <%= partial(:'partials/boxes', :locals => { :list => current_page.data.cards }) %>
 </div>
 
   <section class="explanation" id="explanation">

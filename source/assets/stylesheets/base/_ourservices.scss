@@ -1,0 +1,139 @@
+.our-services {
+  @include row();
+  width: 100%;
+  padding: 0.5em 6em;
+  text-align: left;
+  @media(max-width: $mobile-screen - 1) {
+   padding: 1em;
+   text-align: center;
+  }
+
+  a {
+    text-decoration: none !important;
+    color: $black;
+  }
+
+  h2 {
+    font-size: 45px;
+    font-weight: 100;
+    @include media($horizontal-bar-mode) {
+      font-size: 75px;
+    }
+    @media(max-width: $mobile-screen - 1) {
+     font-size: 40px;
+    }
+  }
+
+  .main-container0, .main-container1, .main-container2, .main-container3 {
+    position: relative;
+    width: 100%;
+
+    .img-sec {
+      width: 32%;
+      margin-left: 30%;
+      margin-right: 6%;
+      display: inline-block;
+      vertical-align: bottom;
+      @media(max-width: $mobile-screen - 1) {
+       width: 100%;
+       margin-left: 0em;
+      }
+    }
+    .text {
+      width: 30%;
+      display: inline-block;
+      vertical-align: bottom;
+      text-align: right;
+      @media(max-width: $mobile-screen - 1) {
+       width: 100%;
+      }
+
+      h1 {
+        font-size: 90px;
+        font-weight: 100;
+        line-height: 120px;
+        @include media($horizontal-bar-mode) {
+          font-size: 150px;
+          line-height: 200px;
+        }
+      }
+      h3{
+        font-size: 40px;
+        font-weight: 100;
+        line-height: 53px;
+        @include media($horizontal-bar-mode) {
+          font-size: 50px;
+          line-height: 67px;
+        }
+      }
+      p {
+        font-size: 18px;
+        font-weight: 100;
+        line-height: 24px;
+        margin-bottom: 1em;
+        @include media($horizontal-bar-mode) {
+          font-size: 25px;
+          line-height: 33px;
+        }
+      }
+    }
+  }
+
+  .main-container1 {
+    position: relative;
+    //top: -130px;
+    top: 0px;
+    width: 100%;
+    @media(max-width: $mobile-screen - 1) {
+     top: 0px;
+    }
+    .text {
+      position: absolute;
+      top: -130px;
+      width: 30%;
+      display: inline-block;
+      vertical-align: bottom;
+      text-align: left;
+      @include media($horizontal-bar-mode) {
+        top: -240px;
+      }
+      @media(max-width: $mobile-screen - 1) {
+       width: 100%;
+       position: relative;
+       top: 0;
+      }
+    }
+  }
+
+  .main-container2 {
+
+    .img-sec {
+      margin-left: 20%;
+      margin-top: 8em;
+      @media(max-width: $mobile-screen - 1) {
+       width: 100%;
+       margin-left: 0em;
+       margin-top: 2em;
+      }
+    }
+
+    .text {
+      text-align: left;
+    }
+  }
+
+  .main-container3 {
+
+    .img-sec {
+      margin-left: 0;
+      width: 17%;
+      @media(max-width: $mobile-screen - 1) {
+       display: none;
+      }
+    }
+
+    .text {
+      text-align: right;
+    }
+  }
+}

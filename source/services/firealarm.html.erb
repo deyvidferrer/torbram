@@ -4,8 +4,9 @@ image: "firealarms"
 ---
 
 <%= partial(:'partials/parallax', :locals => { :title => current_page.data.title, :imagebackground => current_page.data.image }) %>
+<%= partial "partials/sect-protection" %>
 
-  <section class="explanation white-bg" id="explanation">
+  <section class="explanation" id="explanation">
     <div class="title">
         <h3 class="uppercase"><%= current_page.data.title %></h3>
     </div>

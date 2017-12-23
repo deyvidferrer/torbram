@@ -1,4 +1,4 @@
-//@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 
 // Break Point Large screen
 $large-screen: 1400px !default;
@@ -11,6 +11,7 @@ $horizontal-bar-mode: $large-screen;
 //$heading-font-family: $base-font-family;
 $base-font-family: 'Segoe UI';
 $heading-font-family: 'Segoe UI';
+$p-font-family: 'Roboto', sans-serif;
 
 // Line height
 $base-line-height: 1.5;
@@ -48,10 +49,14 @@ $base-background-color: #FEFEFE;
 $secondary-background-color: tint($base-border-color, 75%);
 
 // Focus
+//$focus-outline-color: transparentize($action-color, 0.4);
+//$focus-outline-width: 3px;
+//$focus-outline: $focus-outline-width solid $focus-outline-color;
+//$focus-outline-offset: 2px;
 $focus-outline-color: transparentize($action-color, 0.4);
-$focus-outline-width: 3px;
+$focus-outline-width: 0;
 $focus-outline: $focus-outline-width solid $focus-outline-color;
-$focus-outline-offset: 2px;
+$focus-outline-offset: none;
 
 // Animations
 $base-duration: 150ms;
