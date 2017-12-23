@@ -104,8 +104,8 @@
     font-size: 18px;
     line-height: 23px;
     @media(max-width: $mobile-screen - 1) {
-     font-size: 18px;
-     line-height: 23px;
+     font-size: 12px;
+     line-height: 16px;
     }
 
     @include media($horizontal-bar-mode) {

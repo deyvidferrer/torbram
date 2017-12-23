@@ -27,6 +27,12 @@ p, pre {
   font-size: modular-scale(1);
 }
 
+ul {
+  font-family: $p-font-family;
+  li {
+    font-family: $p-font-family;
+  }
+}
 a {
   color: $action-color;
   text-decoration-skip: ink;

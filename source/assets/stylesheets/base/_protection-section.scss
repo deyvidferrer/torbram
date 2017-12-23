@@ -15,8 +15,8 @@
       line-height: get(124px);
     }
     @media(max-width: $mobile-screen - 1) {
-      font-size: getvw(70px);
-      line-height: getvw(94px);
+      // font-size: getvw(70px);
+      // line-height: getvw(94px);
       text-align: left;
       margin-top: getvw(100px);
       margin-left: getvw(20px);
@@ -54,7 +54,7 @@
               line-height: getvw(93px);
             }
             @media(max-width: $mobile-screen - 1) {
-             font-size: getvw(45px);
+             font-size: getvw(55px);
              margin-top: 0em;
             }
           }
@@ -95,7 +95,7 @@
           font-size: getvw(18px);
         }
         @media(max-width: $mobile-screen - 1) {
-         font-size: getvw(18px);
+         font-size: getvw(42px);
         }
       }
     }
