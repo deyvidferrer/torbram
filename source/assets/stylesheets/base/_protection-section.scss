@@ -4,15 +4,15 @@
 
   h2 {
     position: relative;
-    font-size: getvw(70px);
+    font-size: getvw(45px);
+    line-height: getvw(65px);
     text-align: right;
-    margin-top: getvw(123px);
+    margin-top: getvw(100px);
     font-weight: 100;
     margin-right: getvw(123px);
-    line-height: getvw(94px);
     @include media($horizontal-bar-mode) {
-      font-size: getvw(100px);
-      line-height: get(124px);
+      font-size: getvw(100px,1920);
+      line-height: getvw(124px, 1920);
     }
     @include media( $mobile) {
       font-size: getvw(150px);
@@ -25,7 +25,10 @@
 
   .legend {
     width: 100%;
-    margin-top: getvw(50px);
+    margin-top: getvw(0px);
+    @include media($horizontal-bar-mode) {
+      margin-top: getvw(50px,1920);
+    }
     @include media( $mobile) {
      margin-top: 0;
     }
@@ -35,6 +38,7 @@
       margin-left: getvw(306px);
       vertical-align: top;
       margin-right: 3.60%;
+      margin-bottom: getvh(50px);
       display: inline-block;
       @include media( $mobile) {
        width: 100%;
@@ -44,14 +48,14 @@
       }
 
           h2 {
-            font-size: getvw(55px);
-            line-height: getvw(73px);
+            font-size: getvw(35px);
+            line-height: getvw(53px);
             text-align: left;
-            margin-top: getvw(120px);
+            margin-top: getvw(20px);
 
             @include media($horizontal-bar-mode) {
-              font-size: getvw(75px);
-              line-height: getvw(93px);
+              font-size: getvw(70px,1920);
+              line-height: getvw(93px,1920);
             }
             @include media( $mobile) {
              font-size: getvw(100px);
@@ -62,14 +66,14 @@
     }
 
     .img-sec {
-      width: 41.50%;
+      width: 42.50%;
       vertical-align: top;
-      position: relative;
+      position: absolute;
       right: 0;
       display: inline-block;
-      margin-top: getvw(150px);
+      margin-top: getvw(0px);
       @include media($horizontal-bar-mode) {
-        margin-top: getvw(150px);
+        margin-top: getvw(60px,1920);
       }
       @include media( $mobile) {
          width: 100%;
@@ -93,7 +97,7 @@
         font-size: getvw(18px);
 
         @include media($horizontal-bar-mode) {
-          font-size: getvw(18px);
+          font-size: getvw(25px,1920);
         }
         @include media( $mobile) {
          font-size: getvw(50px);

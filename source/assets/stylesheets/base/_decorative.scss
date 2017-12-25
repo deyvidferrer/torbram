@@ -19,11 +19,14 @@
   position: relative;
   img {
     position: absolute;
-    left: getvw(113px);
-    top: getvw(90px);
-    width: getvw(192px);
+    left: getvw(80px);
+    top: getvw(50px);
+    width: getvw(170px);
     @include media($horizontal-bar-mode) {
-      top: getvw(110px);
+      left: getvw(113px,1920);
+      top: getvw(90px,1920);
+      width: getvw(192px,1920);
+      top: getvw(110px,1920);
     }
     @media(max-width: $mobile-screen - 1) {
       display: none;

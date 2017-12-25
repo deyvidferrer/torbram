@@ -22,24 +22,24 @@
     }
 
     h3 {
-      font-size: 55px;
-      line-height: 73px;
+      font-size: getvw(55px);
+      line-height: getvw(73px);
       font-weight: 100;
       @media(max-width: $mobile-screen - 1) {
-       font-size: 40px;
-       line-height: 63px;
+       font-size: getvw(40px,400);
+       line-height: getvw(63px,400);
       }
       @include media($horizontal-bar-mode) {
-        font-size: 75px;
-        line-height: 93px;
+        font-size: getvw(75px);
+        line-height: getvw(93px);
       }
     }
   }
 
   .content {
     width: 60%;
-    font-size: 25px;
-    line-height: 33px;
+    font-size: getvw(25px);
+    line-height: getvw(33px);
     display: inline-block;
     vertical-align: top;
     margin-top: 0;
@@ -47,19 +47,21 @@
     @media(max-width: $mobile-screen - 1) {
      width: 100%;
      margin-top: 2em;
+     font-size: getvw(25px,400);
+     line-height: getvw(33px,400);
     }
 
     p {
-      font-size: 18px;
-      line-height: 23px;
+      font-size: getvw(18px);
+      line-height: getvw(23px);
       @media(max-width: $mobile-screen - 1) {
-       font-size: 18px;
-       line-height: 23px;
+       font-size: getvw(18px,400);
+       line-height: getvw(23px,400);
       }
 
       @include media($horizontal-bar-mode) {
-        font-size: 25px;
-        line-height: 33px;
+        font-size: getvw(25px);
+        line-height: getvw(33px);
       }
     }
 
@@ -71,16 +73,16 @@
         margin: 1em 1.5em;
       }
       li {
-        font-size: 18px;
-        line-height: 23px;
+        font-size: getvw(18px);
+        line-height: getvw(23px);
         @media(max-width: $mobile-screen - 1) {
-          font-size: 18px;
-          line-height: 23px;
+          font-size: getvw(18px,400);
+          line-height: getvw(23px,400);
         }
 
         @include media($horizontal-bar-mode) {
-          font-size: 18px;
-          line-height: 23px;
+          font-size: getvw(18px);
+          line-height: getvw(23px);
         }
       }
     }
@@ -101,16 +103,16 @@
     }
   }
   pre {
-    font-size: 18px;
-    line-height: 23px;
+    font-size: getvw(18px);
+    line-height: getvw(23px);
     @media(max-width: $mobile-screen - 1) {
-     font-size: 12px;
-     line-height: 16px;
+     font-size: getvw(12px,400);
+     line-height: getvw(16px,400);
     }
 
     @include media($horizontal-bar-mode) {
-      font-size: 25px;
-      line-height: 33px;
+      font-size: getvw(25px);
+      line-height: getvw(33px);
     }
 
     a {
