@@ -14,9 +14,9 @@
       font-size: getvw(100px);
       line-height: get(124px);
     }
-    @media(max-width: $mobile-screen - 1) {
-      // font-size: getvw(70px);
-      // line-height: getvw(94px);
+    @include media( $mobile) {
+      font-size: getvw(150px);
+      line-height: getvw(174px);
       text-align: left;
       margin-top: getvw(100px);
       margin-left: getvw(20px);
@@ -26,7 +26,7 @@
   .legend {
     width: 100%;
     margin-top: getvw(50px);
-    @media(max-width: $mobile-screen - 1) {
+    @include media( $mobile) {
      margin-top: 0;
     }
 
@@ -36,7 +36,7 @@
       vertical-align: top;
       margin-right: 3.60%;
       display: inline-block;
-      @media(max-width: $mobile-screen - 1) {
+      @include media( $mobile) {
        width: 100%;
        margin-left: 0em;
        margin-top: 0em;
@@ -53,9 +53,10 @@
               font-size: getvw(75px);
               line-height: getvw(93px);
             }
-            @media(max-width: $mobile-screen - 1) {
-             font-size: getvw(55px);
-             margin-top: 0em;
+            @include media( $mobile) {
+             font-size: getvw(100px);
+             line-height: getvw(123px);
+             margin-top: getvh(50px);
             }
           }
     }
@@ -70,7 +71,7 @@
       @include media($horizontal-bar-mode) {
         margin-top: getvw(150px);
       }
-      @media(max-width: $mobile-screen - 1) {
+      @include media( $mobile) {
          width: 100%;
          margin-top: getvw(100px);
       }
@@ -83,7 +84,7 @@
       @include media($horizontal-bar-mode) {
         width: 80%;
       }
-      @media(max-width: $mobile-screen - 1) {
+      @include media( $mobile) {
        width: 90%;
        padding: getvw(15px);
       }
@@ -94,8 +95,8 @@
         @include media($horizontal-bar-mode) {
           font-size: getvw(18px);
         }
-        @media(max-width: $mobile-screen - 1) {
-         font-size: getvw(42px);
+        @include media( $mobile) {
+         font-size: getvw(50px);
         }
       }
     }

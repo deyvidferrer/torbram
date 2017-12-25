@@ -10,7 +10,7 @@
     }
     @media(max-width: $mobile-screen - 1) {
       top: getvw(-66px);
-      width: get(150px);
+      width: getvw(300px);
     }
   }
 }
@@ -39,7 +39,8 @@
     top: getvw(450px);
     width: getvw(267px);
     @include media($horizontal-bar-mode) {
-      top: getvw(650px);
+      top: getvw(450px);
+      width: getvw(200px);
     }
     @media(max-width: $mobile-screen - 1) {
       display: none;

@@ -61,12 +61,13 @@
   }
 }
 
-@function getvw($object) {
-    $vw: (1366 * 0.01) * 1px;
+@function getvw($object,$res:1366) {
+    $vw: ($res * 0.01) * 1px;
     @return ($object / $vw) * 1vw;
 }
 
-@function getvh($object) {
-    $vh: (768 * 0.01) * 1px;
+
+@function getvh($object,$res:768) {
+    $vh: ($res * 0.01) * 1px;
     @return ($object / $vh) * 1vh;
 }

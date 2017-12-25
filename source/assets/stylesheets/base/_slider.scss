@@ -3,15 +3,15 @@
 .banner {
   color: white;
   background: image-url('banner.png') top left/cover no-repeat;
-  height: getvw(680px);
+  height: 100vh;
   display: flex;
   justify-content: left;
   align-items: center;
 
   @include media($horizontal-bar-mode) {
-    height: getvw(1000px);
+    height: 100vh;
   }
-  @media(max-width: $mobile-screen - 1) {
+  @include media( $mobile) {
     height: getvh(650px);
       background: image-url('banner.jpg') top center/cover no-repeat;
   }
@@ -24,12 +24,12 @@
   letter-spacing: getvw(4px);
   position: relative;
   margin-left: getvw(70px);
-  margin-top: getvw(229px);
-  @media($horizontal-bar-mode) {
-    margin-left: getvw(70px);
-    margin-top: getvw(229px);
+  margin-top: getvw(180px);
+  @include media($horizontal-bar-mode) {
+    margin-left: getvw(70px,1920);
+    margin-top: getvw(229px,1920);
   }
-  @media(max-width: $mobile-screen - 1) {
+  @include media( $mobile) {
     margin-left: getvw(70px);
     margin-top: getvw(229px);
   }
@@ -43,11 +43,11 @@
     font-weight: 500;
     text-align: left;
     @include media($horizontal-bar-mode) {
-      font-size: getvw(140px);
-      line-height: getvw(200px);
+      font-size: getvw(150px,1920);
+      line-height: getvw(200px,1920);
       font-weight: 500;
     }
-    @media(max-width: $mobile-screen - 1) {
+    @include media( $mobile) {
       font-size: getvw(150px);
       line-height: getvw(180px);
     }
@@ -58,7 +58,7 @@
     @include media($horizontal-bar-mode) {
       padding: getvw(10px) getvw(50px) getvw(10px) getvw(30px);
     }
-    @media(max-width: $mobile-screen - 1) {
+    @include media( $mobile) {
       padding: getvw(10px) getvw(50px) getvw(10px) getvw(30px);
     }
   }
@@ -68,7 +68,7 @@
     @include media($horizontal-bar-mode) {
       padding: getvw(10px) getvw(50px) getvw(10px) getvw(30px);
     }
-    @media(max-width: $mobile-screen - 1) {
+    @include media( $mobile) {
       padding: getvw(10px) getvw(50px) getvw(10px) getvw(30px);
     }
   }
@@ -84,7 +84,7 @@
       font-size: getvw(42px);
       margin-top: getvw(50px);
     }
-    @media(max-width: $mobile-screen - 1) {
+    @include media( $mobile) {
       margin-top: getvw(50px);
       font-size: getvw(42px);
     }

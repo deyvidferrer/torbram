@@ -3,6 +3,7 @@
   width: 100%;
   padding: 0.5em 6em;
   text-align: left;
+  overflow: hidden;
   @media(max-width: $mobile-screen - 1) {
    padding: 1em;
    text-align: center;
