@@ -1,8 +1,8 @@
 <header class="navigation" role="banner">
   <div class="navigation-wrapper">
-    <a href="/index.html" class="logo">
-      <%= image_tag('logo.png')%>
-    </a>
+    <% link_to '/index.html#home', :class => "logo" do %>
+        <%= image_tag('logo.png')%>
+    <% end %>
     <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
     <nav role="navigation">
       <ul id="js-navigation-menu" class="navigation-menu show">
@@ -11,10 +11,14 @@
 
         <li id="js-navigation-more" class="nav-link more"><a href="javascript:void(0)">Services</a>
           <ul class="submenu">
+              <li><%= link_to  "General Services" , "/services/general.html" %></li>
+              <li><%= link_to  "Fire Alarms" , "/services/firealarm.html" %></li>
+              <li><%= link_to  "Fire Extinguishers" , "/services/fireextinguishers.html" %></li>
+              <li><%= link_to  "Fire Sprinklers" , "/services/firesprinklers.html" %></li>
             <% sitemap.resources.reverse_each do |f| %>
               <% if f.path.include? "html" %>
                 <% if f.path.include? "services" %>
-                  <li><%= link_to  f.data.title , "/#{f.path}" %></li>
+                  <li><% link_to  f.data.title , "/#{f.path}" %></li>
                 <% end %>
               <% end %>
             <% end %>

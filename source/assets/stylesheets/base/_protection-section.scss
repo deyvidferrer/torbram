@@ -78,6 +78,7 @@
       @include media( $mobile) {
          width: 100%;
          margin-top: getvw(100px);
+         position: relative;
       }
     }
 
