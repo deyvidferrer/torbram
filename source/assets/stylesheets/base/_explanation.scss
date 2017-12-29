@@ -21,7 +21,7 @@
      margin-right: 0;
     }
 
-    h3 {
+    h3,h4,h5 {
       font-size: getvw(55px);
       line-height: getvw(73px);
       font-weight: 100;
@@ -34,7 +34,20 @@
         line-height: getvw(93px);
       }
     }
+    h5 {
+      font-size: getvw(34px);
+      line-height: getvw(44px);
+      @media(max-width: $mobile-screen - 1) {
+       font-size: getvw(40px,400);
+       line-height: getvw(63px,400);
+      }
+      @include media($horizontal-bar-mode) {
+        font-size: getvw(44px);
+        line-height: getvw(64px);
+      }
+    }
   }
+
 
   .content {
     width: 60%;
