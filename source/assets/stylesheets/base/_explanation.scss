@@ -86,8 +86,8 @@
         margin: 1em 1.5em;
       }
       li {
-        font-size: getvw(18px);
-        line-height: getvw(23px);
+        font-size: getvw(24px);
+        line-height: getvw(30px);
         @media(max-width: $mobile-screen - 1) {
           font-size: getvw(18px,400);
           line-height: getvw(23px,400);
